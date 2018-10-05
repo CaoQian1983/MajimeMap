@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import SwiftyGif
 
 
 class customPin: NSObject, MKAnnotation {
@@ -39,7 +40,9 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
     override func viewDidLoad() {
         
         super.viewDidLoad()
-    
+        
+        imageView.loadGif(name: "dambbell2")
+        
         //userdefaultのデータを読み込む
         // String to be filled with the saved value from UserDefaults
         var str1:String = ""
@@ -115,9 +118,15 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
                                 var imageNumber = defaults.object(forKey: "DataStore3") as! Int
                                 print(imageNumber)
                                 
+                                
                                 var photos = ["dambbell","2x.jpg","3x.png","4x.jpg","5x.png","6x.png","7x.jpg","8x"]
                                 
-                                self.imageView.image = UIImage(named:photos[imageNumber])
+//                                self.imageView.image = UIImage(named:photos[imageNumber])
+//
+//                                let gif = UIImage(gifName: "dambbell2.gif")
+//                                let imageview = UIImageView(gifImage: gif, loopCount: -1) // Use -1 for infinite loop
+//                                imageview.frame = self.view.bounds
+//                                self.view.addSubview(imageview)
                                 
                                 //let DataStore: String? = userDefaults.object(forKey: "DataStore") as? String
                                 // 入力された駅名等をジオコーディング

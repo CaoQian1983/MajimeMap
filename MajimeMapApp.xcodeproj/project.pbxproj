@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6814D4D8C244BCE0570FC1BD /* Pods_MajimeMapAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F45F1B5BF076BDA50BA944 /* Pods_MajimeMapAppUITests.framework */; };
+		A4EB70ACD7EA7F1FFA3B4369 /* Pods_MajimeMapAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA7C065BAD339CAF987542D /* Pods_MajimeMapAppTests.framework */; };
+		F0BAE947C94973164F6E8C6A /* Pods_MajimeMapApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC9737D544EF176C38794F8 /* Pods_MajimeMapApp.framework */; };
+		F10B200C2167085B0026EA93 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10B200B2167085B0026EA93 /* UIImage+Gif.swift */; };
+		F10B200E21670BE60026EA93 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F10B200D21670BE60026EA93 /* MapKit.framework */; };
+		F10B201021672A800026EA93 /* hulahoop.gif in Resources */ = {isa = PBXBuildFile; fileRef = F10B200F21672A800026EA93 /* hulahoop.gif */; };
 		F11015EE2158C96400CE749A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11015EC2158C96400CE749A /* Main.storyboard */; };
 		F11015F02159515200CE749A /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11015EF2159515200CE749A /* ThirdViewController.swift */; };
+		F11016EA21666C1100CE749A /* dambbell2.gif in Resources */ = {isa = PBXBuildFile; fileRef = F11016E921666C1100CE749A /* dambbell2.gif */; };
 		F1486B1B2156126E00FD765F /* 1x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1486B132156126E00FD765F /* 1x.jpg */; };
 		F1486B1C2156126E00FD765F /* 2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F1486B142156126E00FD765F /* 2x.jpg */; };
 		F1486B1D2156126E00FD765F /* 8x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1486B152156126E00FD765F /* 8x.png */; };
@@ -46,8 +53,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0EA7C065BAD339CAF987542D /* Pods_MajimeMapAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MajimeMapAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35BD1AA0036B12A9A8BA48A1 /* Pods-MajimeMapAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajimeMapAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MajimeMapAppTests/Pods-MajimeMapAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		3E49C5383E6DF35E47F59A00 /* Pods-MajimeMapApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajimeMapApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MajimeMapApp/Pods-MajimeMapApp.release.xcconfig"; sourceTree = "<group>"; };
+		7867348182EA2CED4E5CF4F3 /* Pods-MajimeMapAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajimeMapAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MajimeMapAppTests/Pods-MajimeMapAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		81308CC8A87B784EB0702695 /* Pods-MajimeMapAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajimeMapAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MajimeMapAppUITests/Pods-MajimeMapAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8AF7E652379EBEAB451FDB69 /* Pods-MajimeMapApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajimeMapApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MajimeMapApp/Pods-MajimeMapApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9DC9737D544EF176C38794F8 /* Pods_MajimeMapApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MajimeMapApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6231E2803748DBA67672D40 /* Pods-MajimeMapAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MajimeMapAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MajimeMapAppUITests/Pods-MajimeMapAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E1F45F1B5BF076BDA50BA944 /* Pods_MajimeMapAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MajimeMapAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F10B200B2167085B0026EA93 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		F10B200D21670BE60026EA93 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F10B200F21672A800026EA93 /* hulahoop.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hulahoop.gif; sourceTree = "<group>"; };
 		F11015ED2158C96400CE749A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F11015EF2159515200CE749A /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		F11016E921666C1100CE749A /* dambbell2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dambbell2.gif; sourceTree = "<group>"; };
 		F1486B132156126E00FD765F /* 1x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1x.jpg; path = Assets.xcassets/1x.jpg; sourceTree = "<group>"; };
 		F1486B142156126E00FD765F /* 2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2x.jpg; path = Assets.xcassets/2x.jpg; sourceTree = "<group>"; };
 		F1486B152156126E00FD765F /* 8x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 8x.png; path = Assets.xcassets/8x.png; sourceTree = "<group>"; };
@@ -78,6 +98,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F10B200E21670BE60026EA93 /* MapKit.framework in Frameworks */,
+				F0BAE947C94973164F6E8C6A /* Pods_MajimeMapApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4EB70ACD7EA7F1FFA3B4369 /* Pods_MajimeMapAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,12 +115,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6814D4D8C244BCE0570FC1BD /* Pods_MajimeMapAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		409757ACE98A8DC774E979D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AF7E652379EBEAB451FDB69 /* Pods-MajimeMapApp.debug.xcconfig */,
+				3E49C5383E6DF35E47F59A00 /* Pods-MajimeMapApp.release.xcconfig */,
+				7867348182EA2CED4E5CF4F3 /* Pods-MajimeMapAppTests.debug.xcconfig */,
+				35BD1AA0036B12A9A8BA48A1 /* Pods-MajimeMapAppTests.release.xcconfig */,
+				81308CC8A87B784EB0702695 /* Pods-MajimeMapAppUITests.debug.xcconfig */,
+				D6231E2803748DBA67672D40 /* Pods-MajimeMapAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C1B9E853A88CB6CA57F725F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F10B200D21670BE60026EA93 /* MapKit.framework */,
+				9DC9737D544EF176C38794F8 /* Pods_MajimeMapApp.framework */,
+				0EA7C065BAD339CAF987542D /* Pods_MajimeMapAppTests.framework */,
+				E1F45F1B5BF076BDA50BA944 /* Pods_MajimeMapAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F1B93AF42154942400A4B61E = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +153,8 @@
 				F1B93B142154942500A4B61E /* MajimeMapAppTests */,
 				F1B93B1F2154942500A4B61E /* MajimeMapAppUITests */,
 				F1B93AFE2154942400A4B61E /* Products */,
+				409757ACE98A8DC774E979D3 /* Pods */,
+				C1B9E853A88CB6CA57F725F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +179,8 @@
 				F1486B162156126E00FD765F /* 6x.png */,
 				F1486B192156126E00FD765F /* 7x.jpg */,
 				F1486B152156126E00FD765F /* 8x.png */,
+				F11016E921666C1100CE749A /* dambbell2.gif */,
+				F10B200F21672A800026EA93 /* hulahoop.gif */,
 				F1B93B002154942400A4B61E /* AppDelegate.swift */,
 				F1B93B022154942400A4B61E /* ViewController.swift */,
 				F1486B232156484500FD765F /* SecondViewController.swift */,
@@ -139,6 +191,7 @@
 				F1B93B072154942500A4B61E /* Assets.xcassets */,
 				F1B93B092154942500A4B61E /* LaunchScreen.storyboard */,
 				F1B93B0C2154942500A4B61E /* Info.plist */,
+				F10B200B2167085B0026EA93 /* UIImage+Gif.swift */,
 			);
 			path = MajimeMapApp;
 			sourceTree = "<group>";
@@ -168,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1B93B252154942500A4B61E /* Build configuration list for PBXNativeTarget "MajimeMapApp" */;
 			buildPhases = (
+				AE50A74D41A3B9FC2CFAF5F2 /* [CP] Check Pods Manifest.lock */,
 				F1B93AF92154942400A4B61E /* Sources */,
 				F1B93AFA2154942400A4B61E /* Frameworks */,
 				F1B93AFB2154942400A4B61E /* Resources */,
+				BB48F92C7ADAAE3174AB6F7F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,6 +240,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1B93B282154942500A4B61E /* Build configuration list for PBXNativeTarget "MajimeMapAppTests" */;
 			buildPhases = (
+				D49B405D7C919071D48B99C0 /* [CP] Check Pods Manifest.lock */,
 				F1B93B0D2154942500A4B61E /* Sources */,
 				F1B93B0E2154942500A4B61E /* Frameworks */,
 				F1B93B0F2154942500A4B61E /* Resources */,
@@ -203,6 +259,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F1B93B2B2154942500A4B61E /* Build configuration list for PBXNativeTarget "MajimeMapAppUITests" */;
 			buildPhases = (
+				AB15AAEC38B4DAF9B3ED8B8C /* [CP] Check Pods Manifest.lock */,
 				F1B93B182154942500A4B61E /* Sources */,
 				F1B93B192154942500A4B61E /* Frameworks */,
 				F1B93B1A2154942500A4B61E /* Resources */,
@@ -232,6 +289,11 @@
 				TargetAttributes = {
 					F1B93AFC2154942400A4B61E = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					F1B93B102154942500A4B61E = {
 						CreatedOnToolsVersion = 10.0;
@@ -274,9 +336,11 @@
 				F11015EE2158C96400CE749A /* Main.storyboard in Resources */,
 				F1486B212156126E00FD765F /* 7x.jpg in Resources */,
 				F1486B1B2156126E00FD765F /* 1x.jpg in Resources */,
+				F10B201021672A800026EA93 /* hulahoop.gif in Resources */,
 				F1486B1D2156126E00FD765F /* 8x.png in Resources */,
 				F1B93B0B2154942500A4B61E /* LaunchScreen.storyboard in Resources */,
 				F1486B1F2156126E00FD765F /* 3x.png in Resources */,
+				F11016EA21666C1100CE749A /* dambbell2.gif in Resources */,
 				F1B93B082154942500A4B61E /* Assets.xcassets in Resources */,
 				F1486B1C2156126E00FD765F /* 2x.jpg in Resources */,
 				F1486B1E2156126E00FD765F /* 6x.png in Resources */,
@@ -299,11 +363,103 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AB15AAEC38B4DAF9B3ED8B8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MajimeMapAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE50A74D41A3B9FC2CFAF5F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MajimeMapApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB48F92C7ADAAE3174AB6F7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MajimeMapApp/Pods-MajimeMapApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyGif.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MajimeMapApp/Pods-MajimeMapApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D49B405D7C919071D48B99C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MajimeMapAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F1B93AF92154942400A4B61E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F10B200C2167085B0026EA93 /* UIImage+Gif.swift in Sources */,
 				F1486B242156484500FD765F /* SecondViewController.swift in Sources */,
 				F1B93B032154942400A4B61E /* ViewController.swift in Sources */,
 				F11015F02159515200CE749A /* ThirdViewController.swift in Sources */,
@@ -481,6 +637,7 @@
 		};
 		F1B93B262154942500A4B61E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AF7E652379EBEAB451FDB69 /* Pods-MajimeMapApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +656,7 @@
 		};
 		F1B93B272154942500A4B61E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E49C5383E6DF35E47F59A00 /* Pods-MajimeMapApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -517,6 +675,7 @@
 		};
 		F1B93B292154942500A4B61E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7867348182EA2CED4E5CF4F3 /* Pods-MajimeMapAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -538,6 +697,7 @@
 		};
 		F1B93B2A2154942500A4B61E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35BD1AA0036B12A9A8BA48A1 /* Pods-MajimeMapAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -559,6 +719,7 @@
 		};
 		F1B93B2C2154942500A4B61E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81308CC8A87B784EB0702695 /* Pods-MajimeMapAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -579,6 +740,7 @@
 		};
 		F1B93B2D2154942500A4B61E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6231E2803748DBA67672D40 /* Pods-MajimeMapAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

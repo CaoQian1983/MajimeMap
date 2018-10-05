@@ -212,12 +212,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="RaO-SW-TYI" firstAttribute="leading" secondItem="TfL-Bx-a8V" secondAttribute="leading" id="El1-l0-4U0"/>
                             <constraint firstAttribute="bottom" secondItem="RaO-SW-TYI" secondAttribute="bottom" id="GNG-dU-50p"/>
                             <constraint firstItem="axP-Oc-WIh" firstAttribute="top" secondItem="6Sk-bi-qB6" secondAttribute="top" id="Jaa-2f-tA2"/>
                             <constraint firstItem="RaO-SW-TYI" firstAttribute="trailing" secondItem="TfL-Bx-a8V" secondAttribute="trailing" id="Pr7-Qd-HFm"/>
                             <constraint firstItem="axP-Oc-WIh" firstAttribute="leading" secondItem="RaO-SW-TYI" secondAttribute="leading" id="RP4-y6-nUt"/>
+                            <constraint firstItem="RaO-SW-TYI" firstAttribute="top" secondItem="axP-Oc-WIh" secondAttribute="bottom" constant="8" id="Sk7-iL-e5Y"/>
                             <constraint firstItem="axP-Oc-WIh" firstAttribute="trailing" secondItem="RaO-SW-TYI" secondAttribute="trailing" id="ZeR-yw-hfT"/>
                             <constraint firstItem="RaO-SW-TYI" firstAttribute="top" secondItem="axP-Oc-WIh" secondAttribute="bottom" constant="8" id="aKc-Lz-hlZ"/>
+                            <constraint firstItem="RaO-SW-TYI" firstAttribute="trailing" secondItem="TfL-Bx-a8V" secondAttribute="trailing" id="fnQ-0H-35Z"/>
+                            <constraint firstAttribute="bottom" secondItem="RaO-SW-TYI" secondAttribute="bottom" id="g35-ij-KwU"/>
                             <constraint firstItem="RaO-SW-TYI" firstAttribute="leading" secondItem="TfL-Bx-a8V" secondAttribute="leading" id="gLa-Hc-R1s"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TfL-Bx-a8V"/>
