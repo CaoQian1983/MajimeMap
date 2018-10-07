@@ -31,6 +31,9 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
     var longtitude : CLLocationDegrees!
     
     var start:CLLocation!
+    
+    let defaults = UserDefaults.standard
+
    
     @IBOutlet weak var MapView: MKMapView!
 
@@ -40,15 +43,21 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-        imageView.loadGif(name: "dambbell2")
+       
+        var imageNumber = defaults.object(forKey: "DataStore3") as! Int
+        print(imageNumber)
+       
+         var photos = ["dambbell2","hulahoop","skateboard","hofuku","yonsoku","unicycle","bakuten","jumprope"]
+        print(photos[imageNumber])
+
+        imageView.loadGif(name:photos[imageNumber])
         
         //userdefaultのデータを読み込む
         // String to be filled with the saved value from UserDefaults
         var str1:String = ""
         var str2:String = ""
         // Get the standard UserDefaults as "defaults"
-        let defaults = UserDefaults.standard
+    
         
         
         
@@ -95,7 +104,7 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
                     
                     var str2Latitude = CLLocationDegrees()
                     var str2Longitude = CLLocationDegrees()
-                    str2 = defaults.object(forKey: "DataStore2") as! String
+                    str2 = self.defaults.object(forKey: "DataStore2") as! String
                     //住所を座標に変換する。
                     
                     myGeocoder2.geocodeAddressString(str2, completionHandler: {(placemarks, error) in
@@ -115,10 +124,7 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
                                 str2Latitude = location.coordinate.latitude
                                 str2Longitude = location.coordinate.longitude
                                 
-                                var imageNumber = defaults.object(forKey: "DataStore3") as! Int
-                                print(imageNumber)
-                                
-                                
+                    
                                 var photos = ["dambbell","2x.jpg","3x.png","4x.jpg","5x.png","6x.png","7x.jpg","8x"]
                                 
 //                                self.imageView.image = UIImage(named:photos[imageNumber])

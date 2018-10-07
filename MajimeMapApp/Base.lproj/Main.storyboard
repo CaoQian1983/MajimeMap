@@ -17,9 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kvv-EY-ju6">
-                                <rect key="frame" x="77" y="254" width="0.0" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kvv-EY-ju6">
+                                <rect key="frame" x="56" y="254" width="25" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -48,9 +47,8 @@
                                     <action selector="textField2:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="3iH-1m-JVV"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="出発地" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8A-f7-WIK">
-                                <rect key="frame" x="77" y="244" width="56" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="出発地" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8A-f7-WIK">
+                                <rect key="frame" x="70" y="244" width="63" height="47"/>
                                 <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -68,9 +66,8 @@
                                     <action selector="textField1:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="hH8-SF-4vB"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="目的地" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5La-Ju-ZWI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="目的地" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5La-Ju-ZWI">
                                 <rect key="frame" x="237" y="373" width="56" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -81,12 +78,24 @@
                         <constraints>
                             <constraint firstItem="Tu0-EK-bwt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="1Ld-jQ-a7I"/>
                             <constraint firstItem="Tu0-EK-bwt" firstAttribute="top" secondItem="jcR-vR-aWO" secondAttribute="bottom" constant="79" id="4cX-BR-OsJ"/>
+                            <constraint firstItem="5La-Ju-ZWI" firstAttribute="leading" secondItem="jcR-vR-aWO" secondAttribute="trailing" id="5xl-mu-NBf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HBD-x9-Bk1" secondAttribute="trailing" constant="82" id="BiI-4d-g7j"/>
                             <constraint firstItem="jcR-vR-aWO" firstAttribute="top" secondItem="HBD-x9-Bk1" secondAttribute="bottom" constant="82" id="Glh-c7-H9m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x8A-f7-WIK" secondAttribute="trailing" constant="242" id="Gx0-xx-yMu"/>
+                            <constraint firstItem="jcR-vR-aWO" firstAttribute="top" secondItem="x8A-f7-WIK" secondAttribute="bottom" constant="82" id="LhH-hs-JUu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jcR-vR-aWO" secondAttribute="trailing" constant="138" id="Mr8-2h-Qqa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tu0-EK-bwt" secondAttribute="bottom" constant="224" id="MzN-0G-TA1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tu0-EK-bwt" secondAttribute="bottom" constant="224" id="NPc-yC-9S0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tu0-EK-bwt" secondAttribute="trailing" constant="82" id="Qqg-G5-G7p"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tu0-EK-bwt" secondAttribute="trailing" constant="82" id="Z4b-lg-dTO"/>
+                            <constraint firstItem="x8A-f7-WIK" firstAttribute="leading" secondItem="Kvv-EY-ju6" secondAttribute="trailing" id="Z5R-oh-4Rb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5La-Ju-ZWI" secondAttribute="trailing" constant="82" id="etn-0C-9xF"/>
+                            <constraint firstItem="Tu0-EK-bwt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="fTL-xZ-hON"/>
+                            <constraint firstItem="Tu0-EK-bwt" firstAttribute="top" secondItem="5La-Ju-ZWI" secondAttribute="bottom" constant="79" id="grv-Oe-TtL"/>
                             <constraint firstItem="HBD-x9-Bk1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="131" id="mTC-7O-baA"/>
+                            <constraint firstItem="5La-Ju-ZWI" firstAttribute="top" secondItem="HBD-x9-Bk1" secondAttribute="bottom" constant="82" id="njp-CJ-dgo"/>
+                            <constraint firstItem="x8A-f7-WIK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="156" id="o8G-jJ-ZYT"/>
+                            <constraint firstItem="Tu0-EK-bwt" firstAttribute="top" secondItem="jcR-vR-aWO" secondAttribute="bottom" constant="79" id="pQA-f4-Srg"/>
                             <constraint firstItem="jcR-vR-aWO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="xZw-Hn-VlI"/>
                             <constraint firstItem="HBD-x9-Bk1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="156" id="zLX-ud-Hkx"/>
                         </constraints>
