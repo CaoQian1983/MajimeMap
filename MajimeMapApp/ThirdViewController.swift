@@ -11,7 +11,6 @@ import MapKit
 import CoreLocation
 import SwiftyGif
 
-
 class customPin: NSObject, MKAnnotation {
     var coordinate: CLLocationCoordinate2D
     var title: String?
@@ -33,6 +32,8 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
     var start:CLLocation!
     
     let defaults = UserDefaults.standard
+    
+    
 
    
     @IBOutlet weak var MapView: MKMapView!
@@ -40,10 +41,18 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
     
     @IBOutlet weak var imageView: UIImageView!
     
+    
+    
+    @IBOutlet weak var label: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
-       
+        
+        
+        
         var imageNumber = defaults.object(forKey: "DataStore3") as! Int
         print(imageNumber)
        
@@ -144,8 +153,22 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
                                 print (sourceLocation)
                                 let destinationLocation = CLLocationCoordinate2D(latitude:str2Latitude,longitude:str2Longitude)
                                 print (destinationLocation)
+                                
                                 let distance = myLocation.distance(from: targetLocation)
                                 print("中身は",distance)
+                                
+                                //Swiftに置ける型の変換の仕方。
+                                //distanceの型をString型に変更する。
+                                //ラベルへの文字の入れ方
+                                self.label.text = distance.description
+                                let _ : String; "中身は"
+                                
+                                
+                               
+                                
+                                
+                                
+                                
                                 
                                 let sourcePin = customPin(pinTitle: placemark1, pinSubTitle: "", location: sourceLocation)
                                 let destinationPin = customPin(pinTitle: placemark2, pinSubTitle: "", location: destinationLocation)
@@ -188,10 +211,8 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
                 print("検索できませんでした。error",error)
             }
         })
-        
 
     }
-    
     
     //MARK:- MapKit delegates
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
@@ -201,6 +222,9 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
         return renderer
     }
     
+    func mapView(mapView: MKMapView!, regionDidChangeAnimated animated: Bool) {
+        print("regionDidChangeAnimated")
+    }
 //    func calculateDistancefrom(sourceLocation: MKMapItem, destinationLocation: MKMapItem, doneSearching: @escaping (_ expectedTravelTim: TimeInterval) -> Void) {
 //
 //        let request: MKDirections.Request = MKDirections.Request()
@@ -314,8 +338,10 @@ extension ThirdViewController : MKMapViewDelegate {
         
         return myPinView
     }
-        
+   
 }
+
+
         //マップビュー内のタップした位置を取得する。
 //        let location:CGPoint = sender.location(in: MapView)
 //
