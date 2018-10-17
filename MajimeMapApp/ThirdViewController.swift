@@ -36,28 +36,55 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
     
     var audioPlayerInstance : AVAudioPlayer! = nil
     
+//    var players:[AVAudioPlayer]!
+//    let audioFiles = ["test1","test2","test3"]
+
     
-@IBOutlet weak var MapView: MKMapView!
+    
+    @IBOutlet weak var MapView: MKMapView!
 
     
     @IBOutlet weak var imageView: UIImageView!
     
     
-    
     @IBOutlet weak var label: UILabel!
     
-    // gifイメージがタップされたときにする処理
-    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+   
+    
+        //gifイメージがタップされたときにする処理
+        @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
         audioPlayerInstance.currentTime = 0
         audioPlayerInstance.play()
+//        play(n: 0)
+//        play(n: 1)
+//        play(n: 2)
+
     }
     
+//    func play(n:Int) {
+//        if n < players.count {
+//            players[n].play()
+//        }
+//    }
+//
+//    func setup() {
+//        players = []
+//        for fname in audioFiles {
+//            let path = URL(fileURLWithPath: Bundle.main.path(forResource: fname, ofType: "mp4")!)
+//            do {
+//                let player = try AVAudioPlayer(contentsOf:path)
+//                players.append(player)
+//            } catch let error as NSError {
+//                print("error has occurred: \(error)")
+//            }
+//        }
+//    }
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
         
-        let soundFilePath = Bundle.main.path(forResource: "test1", ofType: "mp4")!
+        let soundFilePath = Bundle.main.path(forResource: "test5", ofType: "mp3")!
         let sound:URL = URL(fileURLWithPath: soundFilePath)
         // AVAudioPlayerのインスタンスを作成
         do {
@@ -77,7 +104,7 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
 
         imageView.loadGif(name:photos[imageNumber])
         
-        // gifのイメージにタップイベントを追加
+         //gifのイメージにタップイベントを追加
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         imageView.isUserInteractionEnabled = true
         imageView.addGestureRecognizer(tapGestureRecognizer)
@@ -211,7 +238,7 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
                                 }
                                 
                                 //set delegate for mapview
-                                self.MapView.delegate = self
+                                    self.MapView.delegate = self
                             }
                         } else {
                             print("検索できませんでした。")
@@ -330,7 +357,7 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
     }
 }
 
-extension ThirdViewController : MKMapViewDelegate {
+    extension ThirdViewController : MKMapViewDelegate {
     
     // Delegate method called when addAnnotation is done.
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
@@ -351,11 +378,9 @@ extension ThirdViewController : MKMapViewDelegate {
         print("latitude: \(annotation.coordinate.latitude), longitude: \(annotation.coordinate.longitude)")
         
         return myPinView
-    }
+            }
    
-    
-}
-
+        }
 
         //マップビュー内のタップした位置を取得する。
 //        let location:CGPoint = sender.location(in: MapView)
