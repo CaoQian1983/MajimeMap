@@ -33,6 +33,7 @@
 		F19ACBA7216F26E000413BA6 /* 8x.png in Resources */ = {isa = PBXBuildFile; fileRef = F19ACBA6216F26E000413BA6 /* 8x.png */; };
 		F19ACBA9216F270E00413BA6 /* 3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F19ACBA8216F270E00413BA6 /* 3x.png */; };
 		F19ACBAB216F273700413BA6 /* 6x.png in Resources */ = {isa = PBXBuildFile; fileRef = F19ACBAA216F273700413BA6 /* 6x.png */; };
+		F19ACBAF2176D47C00413BA6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F19ACBAE2176D47C00413BA6 /* AVFoundation.framework */; };
 		F1B93B012154942400A4B61E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B93B002154942400A4B61E /* AppDelegate.swift */; };
 		F1B93B032154942400A4B61E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B93B022154942400A4B61E /* ViewController.swift */; };
 		F1B93B082154942500A4B61E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1B93B072154942500A4B61E /* Assets.xcassets */; };
@@ -91,6 +92,8 @@
 		F19ACBA6216F26E000413BA6 /* 8x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8x.png; sourceTree = "<group>"; };
 		F19ACBA8216F270E00413BA6 /* 3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3x.png; sourceTree = "<group>"; };
 		F19ACBAA216F273700413BA6 /* 6x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6x.png; sourceTree = "<group>"; };
+		F19ACBAE2176D47C00413BA6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F19ACBBE2177279100413BA6 /* test1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test1.mp4; sourceTree = "<group>"; };
 		F1B93AFD2154942400A4B61E /* MajimeMapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MajimeMapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B93B002154942400A4B61E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1B93B022154942400A4B61E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19ACBAF2176D47C00413BA6 /* AVFoundation.framework in Frameworks */,
 				F10B200E21670BE60026EA93 /* MapKit.framework in Frameworks */,
 				F0BAE947C94973164F6E8C6A /* Pods_MajimeMapApp.framework in Frameworks */,
 			);
@@ -150,6 +154,7 @@
 		C1B9E853A88CB6CA57F725F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F19ACBAE2176D47C00413BA6 /* AVFoundation.framework */,
 				F10B200D21670BE60026EA93 /* MapKit.framework */,
 				9DC9737D544EF176C38794F8 /* Pods_MajimeMapApp.framework */,
 				0EA7C065BAD339CAF987542D /* Pods_MajimeMapAppTests.framework */,
@@ -199,6 +204,7 @@
 				F19ACB96216F258D00413BA6 /* jumprope.gif */,
 				F19ACB9C216F25E900413BA6 /* yonsoku.gif */,
 				F19ACB90216F251A00413BA6 /* bakuten.gif */,
+				F19ACBBE2177279100413BA6 /* test1.mp4 */,
 				F1B93B002154942400A4B61E /* AppDelegate.swift */,
 				F1B93B022154942400A4B61E /* ViewController.swift */,
 				F1486B232156484500FD765F /* SecondViewController.swift */,

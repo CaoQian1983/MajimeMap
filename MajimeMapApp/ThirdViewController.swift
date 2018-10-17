@@ -10,6 +10,7 @@ import UIKit
 import MapKit
 import CoreLocation
 import SwiftyGif
+import AVFoundation
 
 class customPin: NSObject, MKAnnotation {
     var coordinate: CLLocationCoordinate2D
@@ -33,10 +34,10 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
     
     let defaults = UserDefaults.standard
     
+    var audioPlayerInstance : AVAudioPlayer! = nil
     
-
-   
-    @IBOutlet weak var MapView: MKMapView!
+    
+@IBOutlet weak var MapView: MKMapView!
 
     
     @IBOutlet weak var imageView: UIImageView!
@@ -45,12 +46,27 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
     
     @IBOutlet weak var label: UILabel!
     
-    
+    // gifイメージがタップされたときにする処理
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+        audioPlayerInstance.currentTime = 0
+        audioPlayerInstance.play()
+    }
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
+        
+        let soundFilePath = Bundle.main.path(forResource: "test1", ofType: "mp4")!
+        let sound:URL = URL(fileURLWithPath: soundFilePath)
+        // AVAudioPlayerのインスタンスを作成
+        do {
+            audioPlayerInstance = try AVAudioPlayer(contentsOf: sound, fileTypeHint:nil)
+        } catch {
+            print("AVAudioPlayerインスタンス作成失敗")
+        }
+        // バッファに保持していつでも再生できるようにする
+        audioPlayerInstance.prepareToPlay()
         
         
         var imageNumber = defaults.object(forKey: "DataStore3") as! Int
@@ -61,17 +77,17 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
 
         imageView.loadGif(name:photos[imageNumber])
         
+        // gifのイメージにタップイベントを追加
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+        imageView.isUserInteractionEnabled = true
+        imageView.addGestureRecognizer(tapGestureRecognizer)
+        
         //userdefaultのデータを読み込む
         // String to be filled with the saved value from UserDefaults
         var str1:String = ""
         var str2:String = ""
         // Get the standard UserDefaults as "defaults"
-    
-        
-        
-        
-        
-        // Get the saved String from the standard UserDefaults with the key, "DataStore"
+    // Get the saved String from the standard UserDefaults with the key, "DataStore"
     
         str1 = defaults.object(forKey: "DataStore1") as! String
         //住所を座標に変換する。
@@ -165,11 +181,6 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
                                 
                                 
                                
-                                
-                                
-                                
-                                
-                                
                                 let sourcePin = customPin(pinTitle: placemark1, pinSubTitle: "", location: sourceLocation)
                                 let destinationPin = customPin(pinTitle: placemark2, pinSubTitle: "", location: destinationLocation)
                                 self.MapView.addAnnotation(sourcePin)
@@ -214,6 +225,8 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
 
     }
     
+    
+    
     //MARK:- MapKit delegates
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let renderer = MKPolylineRenderer(overlay: overlay)
@@ -225,6 +238,7 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
     func mapView(mapView: MKMapView!, regionDidChangeAnimated animated: Bool) {
         print("regionDidChangeAnimated")
     }
+   
 //    func calculateDistancefrom(sourceLocation: MKMapItem, destinationLocation: MKMapItem, doneSearching: @escaping (_ expectedTravelTim: TimeInterval) -> Void) {
 //
 //        let request: MKDirections.Request = MKDirections.Request()
@@ -339,6 +353,7 @@ extension ThirdViewController : MKMapViewDelegate {
         return myPinView
     }
    
+    
 }
 
 
