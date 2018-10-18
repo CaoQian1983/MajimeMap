@@ -20,6 +20,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tu0-EK-bwt">
                                 <rect key="frame" x="77" y="499" width="216" height="55"/>
                                 <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="8mM-s3-gGq"/>
+                                    <constraint firstAttribute="height" constant="55" id="NAu-Ng-Sda"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="たどり着きたい">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -32,7 +36,9 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jcR-vR-aWO">
                                 <rect key="frame" x="77" y="373" width="160" height="47"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="7DS-Oh-7jx"/>
                                     <constraint firstAttribute="width" secondItem="jcR-vR-aWO" secondAttribute="height" multiplier="160:47" id="Shc-Kk-RGu"/>
+                                    <constraint firstAttribute="height" constant="47" id="vrg-Ho-Sx6"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -51,7 +57,9 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HBD-x9-Bk1">
                                 <rect key="frame" x="131" y="244" width="162" height="47"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="162" id="dc0-4w-4Yo"/>
                                     <constraint firstAttribute="width" secondItem="HBD-x9-Bk1" secondAttribute="height" multiplier="162:47" id="gy4-jT-iyD"/>
+                                    <constraint firstAttribute="height" constant="47" id="mfa-Sf-ZFN"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -155,39 +163,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4fh-Mn-0G9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1820" y="125.61576354679804"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Cr7-eJ-tPc">
-            <objects>
-                <viewController id="8Fi-zw-gdM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TVj-Sl-E0o">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="やればできるんだね！！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0I-N0-NHg">
-                                <rect key="frame" x="40" y="206" width="308" height="145"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="惜しーーー！！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgx-MJ-eXX">
-                                <rect key="frame" x="40" y="454" width="308" height="145"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="riw-gZ-2Vu"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kx7-Ds-UHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3812" y="125.61576354679804"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="qDr-OI-Lh7">

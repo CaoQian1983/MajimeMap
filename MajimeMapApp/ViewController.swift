@@ -20,6 +20,62 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ////////////////////////////////////////////////////
+        // インスタンス初期化
+        let textFieldStart = UITextField()
+        let textFieldEnd = UITextField()
+        
+        // サイズ設定
+        textFieldStart.frame.size.width = self.view.frame.width * 2/5
+        textFieldStart.frame.size.height = 50
+        
+        textFieldEnd.frame.size.width = self.view.frame.width * 2/5
+        textFieldEnd.frame.size.height = 50
+        
+        // 位置設定
+        textFieldStart.center.x = 215
+        textFieldStart.center.y = 270
+        
+        textFieldEnd.center.x = 155
+        textFieldEnd.center.y = 400
+        
+        // Delegate を設定
+        textFieldStart.delegate = self
+        textFieldEnd.delegate = self
+        
+        // プレースホルダー
+        textFieldStart.placeholder = "テキストを入力"
+        textFieldEnd.placeholder = "テキストを入力"
+        
+        // 背景色
+        textFieldStart.backgroundColor = UIColor(white: 0.9, alpha: 1)
+        textFieldEnd.backgroundColor = UIColor(white: 0.9, alpha: 1)
+        
+        // 左の余白
+        textFieldStart.leftViewMode = .always
+        textFieldStart.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+        
+        textFieldEnd.leftViewMode = .always
+        textFieldEnd.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+        
+        // テキストを全消去するボタンを表示
+        textFieldStart.clearButtonMode = .always
+        textFieldEnd.clearButtonMode = .always
+        
+        // 改行ボタンの種類を変更
+        textFieldStart.returnKeyType = .done
+        textFieldEnd.returnKeyType = .done
+        // 画面に追加
+        self.view.addSubview(textFieldStart)
+        self.view.addSubview(textFieldEnd)
+        /////////////////////////////////////////////////////////////
+        
+        let Label = UILabel()
+        
+        Label.frame.size.width = self.view.frame.width * 2/5
+        Label.frame.size.height = 48
+     //////////////////////////////////////////////////////////////////
+        
         
         textField1.delegate = self
         

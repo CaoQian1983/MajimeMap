@@ -11,16 +11,16 @@ import UIKit
 class SecondViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
      let margin:CGFloat = 3.0
     
-    //問題ある？？cellをタップしてuserdefaultsに保存するコード
+    //cellをタップしてuserdefaultsに保存するコード
   let userDefaults = UserDefaults.standard
     
     var photos:[String]!
     
-    //問題ある？？cellをタップしてuserdefaultsに保存するコード
+    //cellをタップしてuserdefaultsに保存するコード
  var cell = UIImage()
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -75,7 +75,7 @@ class SecondViewController: UIViewController, UICollectionViewDelegate, UICollec
        
         
         
-        photos = ["1x.jpg","2x.jpg","3x.png","4x.jpg","5x.png","6x.png","7x.jpg","8x"]
+        photos = ["1x.jpg","2x.jpg","3x.png","4x.jpg","5x.png","6x.png","7x.jpg","8x","9x.jpg","10x.jpg"]
  }
    
     

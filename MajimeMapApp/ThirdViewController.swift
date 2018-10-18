@@ -36,8 +36,8 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
     
     var audioPlayerInstance : AVAudioPlayer! = nil
     
-//    var players:[AVAudioPlayer]!
-//    let audioFiles = ["test1","test2","test3"]
+    var players:[AVAudioPlayer]!
+    let audioFiles = ["test1","test2","test3","test4","test5","test6","test7","test8"]
 
     
     
@@ -53,8 +53,11 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
     
         //gifイメージがタップされたときにする処理
         @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
-        audioPlayerInstance.currentTime = 0
-        audioPlayerInstance.play()
+//        audioPlayerInstance.currentTime = 0
+//        audioPlayerInstance.play()
+            let rabdomNum = Int.random(in: 0...players.count - 1)
+        let player = players[rabdomNum]
+            player.play()
 //        play(n: 0)
 //        play(n: 1)
 //        play(n: 2)
@@ -66,40 +69,42 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
 //            players[n].play()
 //        }
 //    }
-//
-//    func setup() {
-//        players = []
-//        for fname in audioFiles {
-//            let path = URL(fileURLWithPath: Bundle.main.path(forResource: fname, ofType: "mp4")!)
-//            do {
-//                let player = try AVAudioPlayer(contentsOf:path)
-//                players.append(player)
-//            } catch let error as NSError {
-//                print("error has occurred: \(error)")
-//            }
-//        }
-//    }
+
+    func setup() {
+        players = []
+        for fname in audioFiles {
+            let path = URL(fileURLWithPath: Bundle.main.path(forResource: fname, ofType: "mp3")!)
+            do {
+                let player = try AVAudioPlayer(contentsOf:path)
+                players.append(player)
+            } catch let error as NSError {
+                print("error has occurred: \(error)")
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
         
-        let soundFilePath = Bundle.main.path(forResource: "test5", ofType: "mp3")!
-        let sound:URL = URL(fileURLWithPath: soundFilePath)
-        // AVAudioPlayerのインスタンスを作成
-        do {
-            audioPlayerInstance = try AVAudioPlayer(contentsOf: sound, fileTypeHint:nil)
-        } catch {
-            print("AVAudioPlayerインスタンス作成失敗")
-        }
-        // バッファに保持していつでも再生できるようにする
-        audioPlayerInstance.prepareToPlay()
+//        let soundFilePath = Bundle.main.path(forResource: "test3", ofType: "mp3")!
+//        let sound:URL = URL(fileURLWithPath: soundFilePath)
+//        // AVAudioPlayerのインスタンスを作成
+//        do {
+//            audioPlayerInstance = try AVAudioPlayer(contentsOf: sound, fileTypeHint:nil)
+//        } catch {
+//            print("AVAudioPlayerインスタンス作成失敗")
+//        }
+//        // バッファに保持していつでも再生できるようにする
+//        audioPlayerInstance.prepareToPlay()
         
+        setup()
         
         var imageNumber = defaults.object(forKey: "DataStore3") as! Int
         print(imageNumber)
        
-         var photos = ["dambbell2","hulahoop","skateboard","hofuku","yonsoku","unicycle","bakuten","jumprope"]
+         var photos = ["dambbell2","hulahoop","skateboard","hofuku","yonsoku","unicycle","bakuten","jumprope","soccer","dribble"]
         print(photos[imageNumber])
 
         imageView.loadGif(name:photos[imageNumber])
@@ -177,7 +182,7 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
                                 str2Longitude = location.coordinate.longitude
                                 
                     
-                                var photos = ["dambbell","2x.jpg","3x.png","4x.jpg","5x.png","6x.png","7x.jpg","8x"]
+//                                var photos = ["dambbell","2x.jpg","3x.png","4x.jpg","5x.png","6x.png","7x.jpg","8x"]
                                 
 //                                self.imageView.image = UIImage(named:photos[imageNumber])
 //
@@ -198,13 +203,18 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
                                 print (destinationLocation)
                                 
                                 let distance = myLocation.distance(from: targetLocation)
-                                print("中身は",distance)
+                                let num1: Int = Int(floor(distance))
+                                print(String(format: "%f", distance))
+                                print("中身は",num1)
+                               
                                 
                                 //Swiftに置ける型の変換の仕方。
                                 //distanceの型をString型に変更する。
                                 //ラベルへの文字の入れ方
-                                self.label.text = distance.description
+                                self.label.text = num1.description + "メートル"
                                 let _ : String; "中身は"
+                                
+                                
                                 
                                 
                                
