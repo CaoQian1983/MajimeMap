@@ -40,12 +40,15 @@
 		F19ACBC8217776CD00413BA6 /* test4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F19ACBC7217776CC00413BA6 /* test4.mp3 */; };
 		F19ACBCA2177772100413BA6 /* test5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F19ACBC92177772100413BA6 /* test5.mp3 */; };
 		F19ACBCC21777C1500413BA6 /* test6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F19ACBCB21777C1500413BA6 /* test6.mp3 */; };
-		F19ACBCE2177805400413BA6 /* 9x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F19ACBCD2177805400413BA6 /* 9x.jpg */; };
 		F19ACBD02177805C00413BA6 /* 10x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F19ACBCF2177805B00413BA6 /* 10x.jpg */; };
 		F19ACBD22177814E00413BA6 /* soccer.gif in Resources */ = {isa = PBXBuildFile; fileRef = F19ACBD12177814E00413BA6 /* soccer.gif */; };
 		F19ACBD42177815700413BA6 /* dribble.gif in Resources */ = {isa = PBXBuildFile; fileRef = F19ACBD32177815600413BA6 /* dribble.gif */; };
 		F19ACBF421781D5F00413BA6 /* test7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F19ACBF321781D5E00413BA6 /* test7.mp3 */; };
 		F19ACBF621781E0A00413BA6 /* test8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F19ACBF521781E0A00413BA6 /* test8.mp3 */; };
+		F19ACBF821787BD600413BA6 /* test9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F19ACBF721787BD400413BA6 /* test9.mp3 */; };
+		F19DD36C2179FB1900D47F2E /* 12x.png in Resources */ = {isa = PBXBuildFile; fileRef = F19DD36B2179FB1900D47F2E /* 12x.png */; };
+		F19DD36E2179FEAB00D47F2E /* 11x.png in Resources */ = {isa = PBXBuildFile; fileRef = F19DD36D2179FEAB00D47F2E /* 11x.png */; };
+		F19DD370217A00F800D47F2E /* 9x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F19DD36F217A00F800D47F2E /* 9x.jpg */; };
 		F1B93B012154942400A4B61E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B93B002154942400A4B61E /* AppDelegate.swift */; };
 		F1B93B032154942400A4B61E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B93B022154942400A4B61E /* ViewController.swift */; };
 		F1B93B082154942500A4B61E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1B93B072154942500A4B61E /* Assets.xcassets */; };
@@ -111,12 +114,15 @@
 		F19ACBC7217776CC00413BA6 /* test4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test4.mp3; sourceTree = "<group>"; };
 		F19ACBC92177772100413BA6 /* test5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test5.mp3; sourceTree = "<group>"; };
 		F19ACBCB21777C1500413BA6 /* test6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test6.mp3; sourceTree = "<group>"; };
-		F19ACBCD2177805400413BA6 /* 9x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9x.jpg; sourceTree = "<group>"; };
 		F19ACBCF2177805B00413BA6 /* 10x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10x.jpg; sourceTree = "<group>"; };
 		F19ACBD12177814E00413BA6 /* soccer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = soccer.gif; sourceTree = "<group>"; };
 		F19ACBD32177815600413BA6 /* dribble.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dribble.gif; sourceTree = "<group>"; };
 		F19ACBF321781D5E00413BA6 /* test7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test7.mp3; sourceTree = "<group>"; };
 		F19ACBF521781E0A00413BA6 /* test8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test8.mp3; sourceTree = "<group>"; };
+		F19ACBF721787BD400413BA6 /* test9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test9.mp3; sourceTree = "<group>"; };
+		F19DD36B2179FB1900D47F2E /* 12x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12x.png; sourceTree = "<group>"; };
+		F19DD36D2179FEAB00D47F2E /* 11x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11x.png; sourceTree = "<group>"; };
+		F19DD36F217A00F800D47F2E /* 9x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9x.jpg; sourceTree = "<group>"; };
 		F1B93AFD2154942400A4B61E /* MajimeMapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MajimeMapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B93B002154942400A4B61E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1B93B022154942400A4B61E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -219,8 +225,10 @@
 				F19ACBAA216F273700413BA6 /* 6x.png */,
 				F19ACBA0216F265400413BA6 /* 7x.jpg */,
 				F19ACBA6216F26E000413BA6 /* 8x.png */,
-				F19ACBCD2177805400413BA6 /* 9x.jpg */,
+				F19DD36F217A00F800D47F2E /* 9x.jpg */,
 				F19ACBCF2177805B00413BA6 /* 10x.jpg */,
+				F19DD36D2179FEAB00D47F2E /* 11x.png */,
+				F19DD36B2179FB1900D47F2E /* 12x.png */,
 				F11016E921666C1100CE749A /* dambbell2.gif */,
 				F19ACB94216F256E00413BA6 /* hulahoop.gif */,
 				F19ACB98216F25B200413BA6 /* skateboard.gif */,
@@ -239,6 +247,7 @@
 				F19ACBCB21777C1500413BA6 /* test6.mp3 */,
 				F19ACBF321781D5E00413BA6 /* test7.mp3 */,
 				F19ACBF521781E0A00413BA6 /* test8.mp3 */,
+				F19ACBF721787BD400413BA6 /* test9.mp3 */,
 				F1B93B002154942400A4B61E /* AppDelegate.swift */,
 				F1B93B022154942400A4B61E /* ViewController.swift */,
 				F1486B232156484500FD765F /* SecondViewController.swift */,
@@ -395,6 +404,7 @@
 				F19ACB95216F256F00413BA6 /* hulahoop.gif in Resources */,
 				F19ACB93216F254500413BA6 /* hofuku.gif in Resources */,
 				F19ACBA3216F267A00413BA6 /* 4x.jpg in Resources */,
+				F19DD36E2179FEAB00D47F2E /* 11x.png in Resources */,
 				F19ACBA7216F26E000413BA6 /* 8x.png in Resources */,
 				F11015EE2158C96400CE749A /* Main.storyboard in Resources */,
 				F1486B1B2156126E00FD765F /* 1x.jpg in Resources */,
@@ -402,20 +412,22 @@
 				F19ACBC8217776CD00413BA6 /* test4.mp3 in Resources */,
 				F19ACB99216F25B200413BA6 /* skateboard.gif in Resources */,
 				F19ACBA5216F26B000413BA6 /* 5x.png in Resources */,
+				F19DD370217A00F800D47F2E /* 9x.jpg in Resources */,
 				F1B93B0B2154942500A4B61E /* LaunchScreen.storyboard in Resources */,
 				F19ACBD42177815700413BA6 /* dribble.gif in Resources */,
 				F19ACBCC21777C1500413BA6 /* test6.mp3 in Resources */,
 				F11016EA21666C1100CE749A /* dambbell2.gif in Resources */,
 				F19ACB97216F258D00413BA6 /* jumprope.gif in Resources */,
-				F19ACBCE2177805400413BA6 /* 9x.jpg in Resources */,
 				F19ACBF421781D5F00413BA6 /* test7.mp3 in Resources */,
 				F19ACBD02177805C00413BA6 /* 10x.jpg in Resources */,
 				F19ACBAB216F273700413BA6 /* 6x.png in Resources */,
+				F19ACBF821787BD600413BA6 /* test9.mp3 in Resources */,
 				F19ACBD22177814E00413BA6 /* soccer.gif in Resources */,
 				F19ACBC62177763A00413BA6 /* test3.mp3 in Resources */,
 				F1B93B082154942500A4B61E /* Assets.xcassets in Resources */,
 				F19ACBCA2177772100413BA6 /* test5.mp3 in Resources */,
 				F19ACB9F216F262500413BA6 /* 2x.jpg in Resources */,
+				F19DD36C2179FB1900D47F2E /* 12x.png in Resources */,
 				F19ACBC42177753A00413BA6 /* test2.mp3 in Resources */,
 				F19ACB9D216F25E900413BA6 /* yonsoku.gif in Resources */,
 				F19ACB9B216F25CC00413BA6 /* unicycle.gif in Resources */,

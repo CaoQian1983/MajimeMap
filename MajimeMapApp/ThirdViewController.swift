@@ -37,7 +37,7 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
     var audioPlayerInstance : AVAudioPlayer! = nil
     
     var players:[AVAudioPlayer]!
-    let audioFiles = ["test1","test2","test3","test4","test5","test6","test7","test8"]
+    let audioFiles = ["test1","test2","test3","test4","test5","test6","test7","test8","test9"]
 
     
     
@@ -49,27 +49,19 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
     
     @IBOutlet weak var label: UILabel!
     
-   
+    @IBOutlet weak var label1: UILabel!
+    
     
         //gifイメージがタップされたときにする処理
         @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
 //        audioPlayerInstance.currentTime = 0
 //        audioPlayerInstance.play()
-            let rabdomNum = Int.random(in: 0...players.count - 1)
+        let rabdomNum = Int.random(in: 0...players.count - 1)
         let player = players[rabdomNum]
             player.play()
-//        play(n: 0)
-//        play(n: 1)
-//        play(n: 2)
 
     }
     
-//    func play(n:Int) {
-//        if n < players.count {
-//            players[n].play()
-//        }
-//    }
-
     func setup() {
         players = []
         for fname in audioFiles {
@@ -87,7 +79,6 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
         
         super.viewDidLoad()
         
-        
 //        let soundFilePath = Bundle.main.path(forResource: "test3", ofType: "mp3")!
 //        let sound:URL = URL(fileURLWithPath: soundFilePath)
 //        // AVAudioPlayerのインスタンスを作成
@@ -104,8 +95,11 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
         var imageNumber = defaults.object(forKey: "DataStore3") as! Int
         print(imageNumber)
        
+        
          var photos = ["dambbell2","hulahoop","skateboard","hofuku","yonsoku","unicycle","bakuten","jumprope","soccer","dribble"]
         print(photos[imageNumber])
+        
+        
 
         imageView.loadGif(name:photos[imageNumber])
         
@@ -204,16 +198,28 @@ class ThirdViewController: UIViewController,CLLocationManagerDelegate{
                                 
                                 let distance = myLocation.distance(from: targetLocation)
                                 let num1: Int = Int(floor(distance))
-                                print(String(format: "%f", distance))
                                 print("中身は",num1)
-                               
-                                
-                                //Swiftに置ける型の変換の仕方。
+                               //Swiftに置ける型の変換の仕方。
                                 //distanceの型をString型に変更する。
                                 //ラベルへの文字の入れ方
                                 self.label.text = num1.description + "メートル"
                                 let _ : String; "中身は"
                                 
+                                let speed: [Int] = [4000,3000,10000,2000,3000,5000,7000,9000,3000,7000]
+                                print(speed[2])// 10000
+                                //speedのimageNumber番目の要素を取り出したい
+                                speed[imageNumber]
+                                print(imageNumber)
+                                num1/speed[imageNumber]
+                                
+                                var result = num1/speed[imageNumber]
+                               
+                                var str:String = String(result)
+                               
+                                self.label1.text = str + "時間"
+                                
+                
+
                                 
                                 
                                 
